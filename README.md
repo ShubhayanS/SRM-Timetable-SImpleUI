@@ -2,7 +2,7 @@
 
 A simple template that lets you display events on a timeline, as well as organize them in groups (week days, conference rooms etc…).
 
-## How to build your Timetable?
+## How to build your Timetable & Deploy it?
 
 - Fork this repo and Clone the forked repo.
 
