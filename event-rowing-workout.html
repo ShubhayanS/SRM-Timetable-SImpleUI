@@ -1,3 +1,175 @@
-<div class="cd-schedule-modal__event-info">
-	<div>Rowing Workout. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, unde, nulla. Vel unde deleniti, distinctio inventore quis molestiae perferendis, eum quo harum dolorum reiciendis sunt dicta maiores similique! Officiis repellat iure odio debitis enim eius commodi quae deserunt quam assumenda, ab asperiores reiciendis minima maxime odit laborum, libero veniam non?</div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      document.getElementsByTagName("html")[0].className += " js";
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Time Table</title>
+  </head>
+  <body>
+    <header class="cd-main-header text-center flex flex-column flex-center">
+      <p class="margin-top-md margin-bottom-xl">
+        👈
+        <a
+          class="cd-article-link"
+          href="https://github.com/ShubhayanS/SRM-Timetable-SImpleUI"
+          >Click to Customize yours &hearts; </a
+        >
+     
+	  <h1 class="text-xl">SRM Timetable (SAS)</h1>
+	  
+		<ul class="a" style="text-align: left;">
+			<li>Coffee</li>
+			<li>Tea</li>
+			<li>Coca Cola</li>
+		  </ul>
+
+
+</p>
+<div class="container">
+	<h1>Custom List Style</h1>
+	<ol class="rectangle-list">
+		<li><span>A custom list using custom bullets</span></li>
+		<li><span>List item</span></li>
+		<li><span>List item</span>
+			<ol>
+				<li>
+				  <span>List sub item</span>
+				   <ol>
+					  <li><span>List sub item</span></li>
+					  <li><span>List sub item</span></li>
+					  <li><span>List sub item</span></li>
+				  </ol>
+			  </li>
+				<li><span>List sub item</span></li>
+				<li><span>List sub item</span></li>
+			</ol>
+		</li>
+		<li><span>List item</span></li>
+		<li><span>List item</span></li>                       
+	</ol>
+  </div>
+
+
+  <style>
+	ul.a {
+list-style-type: square;
+}
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 2rem;
+  
+  h1 {
+    font-weight: normal;
+  }
+}
+
+ol {
+    counter-reset: li; /* Initiate a counter */
+    list-style: none; /* Remove default numbering */
+    font: 15px Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+    padding: 0;
+    margin-bottom: 4rem;
+    // text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  
+  ol {
+    margin: 0 0 0 2rem; /* Add some left margin for inner lists */
+  }
+}
+
+li {
+  
+  span {
+    position: relative;
+    display: block;
+    padding: .4rem .4rem .4rem .8rem;
+    margin: .5rem 0 .5rem 2.5rem;
+    background-color: #f1f1f1;
+    color: #444;
+    text-decoration: none;
+    transition: all .3s ease-out;
+    
+    &::before {
+      content: counters(li, ".");
+      counter-increment: li;
+      position: absolute; 
+      left: -2.5rem;
+      top: 50%;
+      margin-top: -1rem;
+      background: #8c7ae6;
+      color: white;
+      // height: 2rem;
+      width: 2rem;
+      line-height: 2rem;
+      text-align: center;
+      // font-weight: bold;
+    }
+  }
+  
+  li {
+    
+    span {
+      &::before {
+        left: -3rem;
+        width: 2.5rem;
+      }
+    }
+    
+    li {
+      span {
+        &::before {
+          left: -3.5rem;
+          width: 3rem;
+        }
+      }
+    }
+  }
+}
+</style>
+
+
+
+
+        <p class="margin-top-md margin-bottom-xl">
+          
+          <a
+            class="cd-article-link"
+            href="https://shubhayans.ml" style="color: black;"
+            >Made with <b style="color: red;">&#x2764;&#xfe0f;</b> by ShubhayanS</a
+          >
+        </p>
+
+      </header>
+      <div class="cd-schedule-modal">
+        <header class="cd-schedule-modal__header">
+          <div class="cd-schedule-modal__content">
+            <span class="cd-schedule-modal__date"></span>
+            <h3 class="cd-schedule-modal__name"></h3>
+          </div>
+
+          <div class="cd-schedule-modal__header-bg"></div>
+        </header>
+
+        <div class="cd-schedule-modal__body">
+          <div class="cd-schedule-modal__event-info"></div>
+          <div class="cd-schedule-modal__body-bg"></div>
+        </div>
+
+        <a href="#0" class="cd-schedule-modal__close text-replace">Close</a>
+      </div>
+
+      <div class="cd-schedule__cover-layer"></div>
+    </div>
+    <!-- .cd-schedule -->
+
+    <script src="assets/js/util.js"></script>
+    <!-- util functions included in the CodyHouse framework -->
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
